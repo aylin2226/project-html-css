@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог — Полезные материалы</title>
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+
+<header>
+    <h1>Полезные материалы для твоего пути в IT</h1>
+
+    <nav>
+        <a href="#books">Книги</a>
+        <a href="#courses">Курсы</a>
+        <a href="#youtube">YouTube</a>
+        <a href="#articles">Статьи</a>
+    </nav>
+</header>
+
+<main>
+    <section class="intro">
+        <h2>Учись. Создавай. Развивайся.</h2>
+        <p>
+            Здесь собраны ресурсы, которые помогут тебе начать
+            изучать программирование и сделать первые шаги в IT.
+        </p>
+    </section>
+
+    <section class="materials">
+        <h2>Полезные материалы</h2>
+
+        <div class="filters">
+            <button class="active" data-filter="all">Все</button>
+            <button data-filter="books">Книги</button>
+            <button data-filter="courses">Курсы</button>
+            <button data-filter="youtube">YouTube</button>
+            <button data-filter="articles">Статьи</button>
+            <button data-filter="films">Фильмы</button>
+        </div>
+
+        <div class="cards">
+
+            <article class="card" data-category="books" id="books">
+                <img src="https://younglinux.info/images/htmlcss/intro/html5_css3_logo.png"
+                     alt="Иллюстрация HTML и CSS">
+                <div class="card-content">
+                    <span>КНИГИ</span>
+                    <h3>Изучаем HTML и CSS</h3>
+                    <p>
+                        Начни с основ создания сайтов, изучи структуру
+                        страниц и научись оформлять их с помощью CSS.
+                    </p>
+                    <a href="https://developer.mozilla.org/ru/docs/Learn_web_development"
+                       target="_blank" rel="noopener noreferrer">
+                        Читать далее →
+                    </a>
+                </div>
+            </article>
+
+            <article class="card" data-category="courses" id="courses">
+                <img src="https://avatars.mds.yandex.net/get-lpc/12373972/590ec7ff-639c-4d48-bae8-ec93e84df49a/orig"
+                     alt="Онлайн-обучение программированию">
+                <div class="card-content">
+                    <span>КУРСЫ</span>
+                    <h3>Яндекс.Практикум</h3>
+                    <p>
+                        Бесплатные интерактивные уроки по HTML, CSS,
+                        JavaScript и другим направлениям программирования.
+                    </p>
+                    <a href="https://practicum.yandex.kz/?utm_source=google&utm_medium=cpc&utm_campaign=Gog_Sch_KZ_Common_Unde_b2c_Gener_Regular_Brand&utm_content=nt_g:pl_:cid_22015435176:gid_191915986208:kw_яндекс%20практикум%20курсы:tid_kwd-1020629657887:crid_776762175493:adp_:d_c:dm_:lim_:lpm_9196502&utm_term=яндекс%20практикум%20курсы&gad_source=1&gad_campaignid=22015435176&gclid=CjwKCAjwuczWBhA9EiwAYGgEoS__UulAaleZU6U8H68SSk8hLRvZ6fT9zDKFVH0HJcwPS5SqhHVhVxoCrNMQAvD_BwE"
+                       target="_blank" rel="noopener noreferrer">
+                        Начать обучение →
+                    </a>
+                </div>
+            </article>
+
+            <article class="card" data-category="youtube" id="youtube">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHXNBjhk-mi8nAJ8eH6t-9fkrwcsNZFCi-kUF_3ohIfg&s=10"
+                     alt="Видеоуроки по программированию">
+                <div class="card-content">
+                    <span>YOUTUBE</span>
+                    <h3>Уроки по веб-разработке</h3>
+                    <p>
+                        Смотри видеоуроки, повторяй примеры и создавай
+                        собственные проекты вместе с преподавателями.
+                    </p>
+                    <a href="https://www.youtube.com/results?search_query=HTML+CSS+для+начинающих"
+                       target="_blank" rel="noopener noreferrer">
+                        Смотреть видео →
+                    </a>
+                </div>
+            </article>
+
+            <article class="card" data-category="articles" id="articles">
+                <img src="https://placehold.co/600x350/E7C5CA/6E3041?text=Web+Development"
+                     alt="Статья о веб-разработке">
+                <div class="card-content">
+                    <span>СТАТЬИ</span>
+                    <h3>Как стать веб-разработчиком</h3>
+                    <p>
+                        Узнай, какие технологии изучать новичку,
+                        как практиковаться и собирать портфолио.
+                    </p>
+                    <a href="https://developer.mozilla.org/ru/docs/Learn_web_development"
+                       target="_blank" rel="noopener noreferrer">
+                        Читать далее →
+                    </a>
+                </div>
+            </article>
+
+            <article class="card" data-category="films" id="films">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfBUpR88pOMjlHjkTSPS5i_0vFX0xySu2SjANODDckEP6t3EG8vLfMkNQ&s=10"
+                     alt="Иллюстрация к фильму о технологиях">
+                <div class="card-content">
+                    <span>ФИЛЬМЫ</span>
+                    <h3>«Социальная сеть»</h3>
+                    <p>
+                        Фильм о создании Facebook, идеях, амбициях
+                        и развитии технологического проекта.
+                    </p>
+                    <a href="https://www.imdb.com/title/tt1285016/"
+                       target="_blank" rel="noopener noreferrer">
+                        Подробнее →
+                    </a>
+                </div>
+            </article>
+
+            <article class="card" data-category="books">
+                <img src="https://simg.marwin.kz/media/catalog/product/cache/41deb699a7fea062a8915debbbb0442c/1/0/1023228489.jpg"
+                     alt="Иллюстрация книги Clean Code">
+                <div class="card-content">
+                    <span>КНИГИ</span>
+                    <h3>«Чистый код»</h3>
+                    <p>
+                        Книга Роберта Мартина о том, как писать понятный,
+                        аккуратный и удобный для поддержки код.
+                    </p>
+                    <a href="https://www.oreilly.com/library/view/clean-code-a/9780136083238/"
+                       target="_blank" rel="noopener noreferrer">
+                        Подробнее →
+                    </a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="tips">
+        <h2>Мой совет новичкам</h2>
+        <p>
+            Не бойся ошибок и не старайся выучить всё сразу.
+            Создавай небольшие проекты, задавай вопросы и практикуйся
+            каждый день. Даже маленький шаг приближает тебя к цели.
+        </p>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 Блог разработчика | Учись в своём темпе</p>
+</footer>
+
+<script>
+    const buttons = document.querySelectorAll(".filters button");
+    const cards = document.querySelectorAll(".card");
+
+    buttons.forEach(button => {
+        button.addEventListener("click", () => {
+            const filter = button.dataset.filter;
+
+            buttons.forEach(item => item.classList.remove("active"));
+            button.classList.add("active");
+
+            cards.forEach(card => {
+                if (filter === "all" ||
+                    card.dataset.category === filter) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        });
+    });
+</script>
+
+</body>
+</html>

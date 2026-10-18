@@ -1,0 +1,107 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.card {
+    height: 250px;
+    background-color: #F1E3E4;
+    border-radius: 18px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s;
+    border: 1px solid #E7C5CA;
+}
+
+.card-title {
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    color: #6E3041;
+    font-size: 28px;
+    transition: 0.3s;
+}
+.card-info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 22px;
+    background-color: #8E4A5A;
+    transform: translateY(100%);
+    transition: transform 0.4s;
+}
+
+
+
+.card-info h3 {
+    color: #FAF7F5;
+    font-size: 24px;
+    margin: 0 0 8px;
+}
+
+.card-info p {
+    color: #FAF7F5;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0 0 8px;
+}
+
+.card-info span {
+    display: block;
+    color: #F1E3E4;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.card-info a {
+    display: inline-block;
+    background-color: #A85D6D;
+    color: white;
+    padding: 9px 17px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(110, 48, 65, 0.15);
+}
+
+.card:hover .card-info {
+    transform: translateY(0);
+}
+
+
+.card:hover .card-title {
+    opacity: 0;
+}
+h1{
+    text-align: center;
+    color: #6E3041;
+}
+img{
+    width: 1165px;
+    height: 500px;
+    padding: 0;
+    margin: 0;
+}
+p{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+margin: 15px;
+padding: 10px; 
+}
+h2{
+    padding: 10px;
+    margin: 5px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #fff4f5;
+}
